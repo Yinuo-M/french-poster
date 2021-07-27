@@ -4,7 +4,7 @@ By [Yinuo Meng](mailto:mengyn1999@gmail.com)
 
 ## Installation
 
-1. Clone locally using `https://github.com/Yinuo-M/french-poster.git`
+1. Clone locally using `git clone https://github.com/Yinuo-M/french-poster.git`
 2. Open the french-poster folder
 3. Open index.html in a browser
 4. Enjoy!
