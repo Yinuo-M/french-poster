@@ -1,4 +1,4 @@
-# Poster
+# French Poster
 
 By [Yinuo Meng](mailto:mengyn1999@gmail.com)
 
