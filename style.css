@@ -1,0 +1,117 @@
+:root {
+  --white: #fcecdf;
+  --black: #191a15;
+  --red: #fc0f2d;
+  --blue: #1188cc;
+}
+
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+html {
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  /* Make sure that the poster is always fully 
+  displayed regardless of viewport size. */
+  min-height: 844.5px;
+  min-width: 589.5px;
+}
+
+/*Poster background*/
+
+.poster {
+  width: 589.5px;
+  height: 844.5px;
+  display: grid;
+  grid-template-columns: 31fr 24fr 23fr;
+  grid-template-rows: 100%;
+  background: var(--white);
+}
+
+.block1,
+.block2,
+.block3 {
+  position: relative;
+}
+
+.block2 {
+  margin: 9px 0;
+}
+
+.red-block,
+.blue-block {
+  position: absolute;
+  top: 184.6px;
+  height: 379.6px;
+  width: 100%;
+}
+
+.red-block {
+  background: var(--red);
+}
+
+.blue-block {
+  background: var(--blue);
+}
+
+.white-rect {
+  background: var(--white);
+  width: 41%;
+  height: 78.3%;
+  position: relative;
+  z-index: 1;
+}
+
+.black-rect {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--black);
+
+  /* Use clip-path to draw the black box. */
+  clip-path: polygon(0 0, 41% 0, 100% 177px, 100% 100%, 63% 100%, 0 78.3%);
+}
+
+/*Text*/
+
+.main-text {
+  position: absolute;
+  top: 590px;
+  left: 18px;
+  width: 110%;
+  z-index: 1;
+}
+
+.title {
+  font-size: 41.5px;
+  font-weight: 600;
+  line-height: 0.9;
+}
+
+.info {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.place {
+  position: absolute;
+  top: 712px;
+  left: 20px;
+  font-weight: 600;
+}
